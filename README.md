@@ -1,1 +1,3 @@
-My personal dotfiles
+my personal dotfiles :)
+
+eddie at digik.com.tw
