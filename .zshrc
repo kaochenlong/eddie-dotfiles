@@ -45,4 +45,9 @@ alias gl="git log"
 alias gc="git commit"
 alias vi="vim"
 
+# some dirty keys for myself
+alias :tabe='tabe'
+alias :q='exit'
+alias :e='vi'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
