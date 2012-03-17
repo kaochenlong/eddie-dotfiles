@@ -41,14 +41,18 @@ export EDITOR='/usr/bin/vim'
 
 alias rake="noglob rake"
 alias irb="irb --simple-prompt"
+alias vi="vim"
+
+# shortcuts for git
+alias gaa="git add ."
 alias gs="git status"
 alias gl="git log"
 alias gc="git commit"
-alias vi="vim"
 
 # some dirty keys for myself
 alias :tabe='tabe'
 alias :q='exit'
 alias :e='vi'
+alias r='rails'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
