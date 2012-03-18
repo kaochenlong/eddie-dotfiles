@@ -18,7 +18,7 @@
   r  = !git l -20
   ra = !git l --all
   l  = "!source ~/.dotfiles/.githelper && pretty_git_log"
-  la = !git l -all
+  la = !git l --all
 [gui]
   encoding = utf-8
 [i18n]
