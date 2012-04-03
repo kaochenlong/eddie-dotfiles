@@ -1,8 +1,11 @@
+# change your machine name
+MACHINE="HOME"
+
 function collapse_pwd {
   echo $(pwd | sed -e "s,^$HOME,~,")
 }
 
-PROMPT='%{$fg[red]%}%n %{$fg_bold[yellow]%}⚡%{$fg_bold[green]%}%p %{$fg[cyan]%}$(collapse_pwd) %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='%{$fg[red]%}%n %{$fg_bold[yellow]%}(@$MACHINE) ⚡%{$fg_bold[green]%}%p %{$fg[cyan]%}$(collapse_pwd) %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 RPROMPT='[%F{green}%T%f]%{$reset_color%}'
 

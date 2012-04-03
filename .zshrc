@@ -34,7 +34,8 @@ DISABLE_AUTO_UPDATE="true"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export FLEX_HOME=~/SDK/flex_sdk
+export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$FLEX_HOME/bin
 export EDITOR='/usr/bin/vim'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -53,6 +54,5 @@ alias gc="git commit"
 alias :tabe='tabe'
 alias :q='exit'
 alias :e='vi'
-alias r='rails'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
