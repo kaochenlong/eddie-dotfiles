@@ -37,6 +37,7 @@ source $ZSH/oh-my-zsh.sh
 export FLEX_HOME=~/SDK/flex_sdk
 export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$FLEX_HOME/bin
 export EDITOR='/usr/bin/vim'
+eval "$(rbenv init -)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -54,5 +55,8 @@ alias gc="git commit"
 alias :tabe='tabe'
 alias :q='exit'
 alias :e='vi'
+
+# alias for tmux
+alias tmux="tmux -2"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
