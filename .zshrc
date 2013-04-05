@@ -37,7 +37,6 @@ source $ZSH/oh-my-zsh.sh
 export FLEX_HOME=~/SDK/flex_sdk
 export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$FLEX_HOME/bin
 export EDITOR='/usr/bin/vim'
-eval "$(rbenv init -)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -61,8 +60,5 @@ alias tmux="tmux -2"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# config for z
-. `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}
+# git-flow completion
+source ~/.dotfiles/git-flow-completion.zsh
